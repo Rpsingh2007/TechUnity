@@ -1,0 +1,79 @@
+:root{
+  --bg:#0f172a;
+  --card:#0b1220;
+  --accent1:#ff6b6b;
+  --accent2:#6b6bff;
+  --accent3:#6bffb3;
+  --glass: rgba(255,255,255,0.06);
+  --soft: rgba(255,255,255,0.03);
+  --text:#e6eef8;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;background:linear-gradient(135deg,#071024 0%, #0b1630 40%, #102030 100%);font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;color:var(--text);-webkit-font-smoothing:antialiased}
+header{position:sticky;top:0;backdrop-filter: blur(6px);background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-bottom:1px solid rgba(255,255,255,0.03);z-index:50}
+.container{max-width:1100px;margin:0 auto;padding:28px}
+/* Hero */
+.hero{display:flex;gap:24px;align-items:center;padding:28px 0}
+.logo{display:flex;align-items:center;gap:14px}
+.logo .mark{width:56px;height:56px;border-radius:14px;background:linear-gradient(45deg,var(--accent1),var(--accent2));display:flex;align-items:center;justify-content:center;font-weight:700;color:white;box-shadow:0 6px 30px rgba(0,0,0,0.5)}
+h1{font-size:28px;margin:0}
+p.lead{margin:6px 0 0;color:rgba(230,238,248,0.8)}
+/* Nav */
+nav{margin-left:auto}
+.navbtn{background:transparent;border:0;color:var(--text);padding:8px 12px;margin-left:8px;border-radius:12px;cursor:pointer;transition:transform .22s, box-shadow .22s}
+.navbtn:hover{transform:translateY(-3px);box-shadow:0 6px 18px rgba(0,0,0,0.5)}
+/* Main grid */
+main{display:grid;grid-template-columns:1fr;gap:22px;padding-bottom:80px}
+.card{background:linear-gradient(180deg,var(--glass), rgba(255,255,255,0.02));border-radius:16px;padding:18px;border:1px solid rgba(255,255,255,0.04);box-shadow:0 6px 30px rgba(2,6,23,0.6)}
+.grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+/* Section Titles */
+.section-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+.section-head h2{margin:0;font-size:20px}
+.pill{padding:8px 12px;border-radius:999px;background:linear-gradient(90deg,var(--accent3),var(--accent2));color:#042019;font-weight:700}
+/* Cards inside */
+.item{padding:12px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.03);transition:transform .25s, box-shadow .25s}
+.item:hover{transform:translateY(-8px);box-shadow:0 18px 60px rgba(12,18,40,0.6)}
+.item h3{margin:0 0 6px;font-size:16px}
+.item p{margin:0;color:rgba(230,238,248,0.8);font-size:14px}
+/* Buttons */
+.btn{display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:12px;border:0;cursor:pointer;font-weight:700}
+.btn--primary{background:linear-gradient(90deg,var(--accent1),var(--accent2));color:white;box-shadow:0 8px 30px rgba(107,107,255,0.12)}
+.btn--ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--text)}
+/* Animated floating shapes */
+.float-shapes{position:fixed;right:-120px;top:40%;pointer-events:none;z-index:1}
+.shape{width:220px;height:220px;border-radius:42% 58% 60% 40%/40% 30% 70% 60%;background:linear-gradient(135deg,rgba(255,107,107,0.12),rgba(107,107,255,0.08));animation:float 8s ease-in-out infinite}
+.shape.two{width:140px;height:140px;top:20%;right:-80px;animation-duration:11s;transform:rotate(40deg)}
+@keyframes float{0%{transform:translateY(-8px) rotate(0deg)}50%{transform:translateY(12px) rotate(12deg)}100%{transform:translateY(-8px) rotate(0deg)}}
+/* Quiz */
+.quiz{display:flex;flex-direction:column;gap:12px}
+.question{padding:14px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.015), rgba(0,0,0,0.03));}
+.options{display:flex;flex-direction:column;gap:8px}
+.opt{padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);cursor:pointer}
+.opt.selected{background:linear-gradient(90deg,var(--accent3),var(--accent2));color:#052018;font-weight:700}
+/* Feedback */
+form.feedback{display:grid;gap:8px}
+input,textarea,select{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px;border-radius:8px;color:var(--text)}
+footer{padding:28px 0;color:rgba(230,238,248,0.7);font-size:14px}
+/* Responsive */
+@media (min-width:900px){main{grid-template-columns:1fr 420px;}}
+/* Micro animations for buttons */
+.btn--pulse{animation:pulse 2.2s infinite}
+@keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.03)}100%{transform:scale(1)}}
+/* Fancy nav drawer for mobile */
+.hamb{display:none}
+@media(max-width:760px){.navbtn.hide-mobile{display:none}.hamb{display:inline-flex}}
+/* to remove blue color of link  with white*/
+button, button a {
+color: white;               /* change text color */
+text-decoration: none;      /* remove underline and blue link style */
+}
+/* for showing correct answer */
+.opt.correct {
+background: #4CAF50;
+color: white;
+}
+.opt.wrong {
+background: #f44336;
+color: white;
+}
+

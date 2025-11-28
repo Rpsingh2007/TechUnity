@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Women Safety & Empowerment</title>
+  <meta name="description" content="A colorful, animated website for women safety, empowerment, education, health, and support." />
+  <link rel="stylesheet" href="web.css" />
+  </head>
+<body>
+  <div class="float-shapes" aria-hidden="true">
+    <div class="shape"></div>
+    <div class="shape two"></div>
+  </div>
+<!-- header portion -->
+  <header>
+    <div class="container" style="display:flex;align-items:center">
+      <div class="hero">
+        <div class="logo">
+          <div class="mark">WS</div>
+          <div>
+            <h1>Women Safety & Empowerment</h1>
+            <p class="lead">Education • Health • Skills • Support</p>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <button class="navbtn hide-mobile" onclick="scrollToSection('education')">Education</button>
+        <button class="navbtn hide-mobile" onclick="scrollToSection('health')">Health</button>
+        <button class="navbtn hide-mobile" onclick="scrollToSection('support')">Support</button>
+        <button class="navbtn hide-mobile" onclick="scrollToSection('quiz')">Quiz</button>
+        <button class="navbtn nav-cta btn--primary btn--pulse" onclick="scrollToSection('feedback')">Give Feedback</button>
+      </nav>
+    </div>
+  </header>
+<!--  Stand Strong — Be Safe -->
+  <main class="container">
+    <section class="card" id="hero-card">
+      <div style="display:flex;justify-content:space-between;gap:18px;align-items:center;flex-wrap:wrap">
+        <div style="flex:1;min-width:240px">
+          <h2 style="font-size:26px;margin-bottom:6px">Stand Strong — Be Safe</h2>
+          <p style="margin:0 0 12px;color:rgba(230,238,248,0.85)">Resources, courses and support for girls and women — designed to raise awareness and provide practical help.</p>
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <button class="btn btn--primary" onclick="scrollToSection('education')">Explore Education</button>
+            <button class="btn btn--ghost" onclick="scrollToSection('support')">Find Support</button>
+            <button class="btn btn--ghost" onclick="scrollToSection('quiz')">Take the Quiz</button>
+            <button class="btn btn--ghost" onclick="scrollToSection('health')">Health Awareness</button>
+
+          </div>
+        </div>
+        <div style="width:320px;min-width:260px">
+          <div style="padding:14px;border-radius:12px;background:linear-gradient(90deg, rgba(255,107,107,0.06), rgba(107,107,255,0.03));border:1px solid rgba(255,255,255,0.03)">
+            <h3 style="margin-top:0">Quick Links</h3>
+            <div style="display:flex;flex-direction:column;gap:8px">
+              <button class="btn btn--ghost"><a href="https://wcdhry.gov.in/schemes-for-women/"target="_main">Government Schemes (Girls)</a></button> 
+              <button class="btn btn--ghost"><a href="https://www.mygov.in/task/women-empowerment-through-skill-development"target="_main">Skill Development Courses</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- Education & Skill Development -->
+    <div>
+      <section class="card" id="education">
+        <div class="section-head">
+          <h2>Education & Skill Development</h2>
+          <div class="pill">Learn & Grow</div>
+        </div>
+        <div class="grid-2">
+          <div class="item">
+            <h3>Girls Education</h3>
+            <p>Information about access to primary, secondary, and higher education for girls; scholarships, mentorship and life-skills programs.</p>
+            <p style="margin-top:8px"><strong>Start:</strong> Local schools • NGOs • Online portals</p>
+            <div style="margin-top:10px">
+              <button class="btn btn--primary"><a href="https://www.unicef.org/education/girls-education"target="_main">Read More</a></button>
+            </div>
+          </div>
+          <div class="item">
+            <h3>Government Schemes for Girls</h3>
+            <p>Summaries of central/state schemes (scholarships, conditional cash transfers, free uniforms, transport support). Check your local government website for latest details.</p>
+            <div style="margin-top:10px">
+              <button class="btn btn--primary"><a href="https://wcdhry.gov.in/schemes-for-women/"target="_main">Explore Schemes</a></button>
+            </div>
+          </div>
+          <div class="item">
+            <h3>Skill Development Courses</h3>
+            <p>Short courses (digital literacy, tailoring, beautician, hospitality, coding basics, entrepreneurship). Many free and low-cost options available online and via community centres.</p>
+            <div style="margin-top:10px">
+              <button class="btn btn--primary"><a href="https://www.mygov.in/task/women-empowerment-through-skill-development"target="_main">View Courses</a></button>
+            </div>
+          </div>
+          <div class="item">
+            <h3>Scholarships & Mentorship</h3>
+            <p>Tips on finding scholarships and mentors — how to apply, documents needed, and building an application that stands out.</p>
+            <div style="margin-top:10px">
+              <button class="btn btn--ghost"><a href="https://www.girlscanmentoring.com/about-4"target="_main">Get Mentor</a></button>
+            </div>
+          </div>
+        </div>
+      </section>
+<!-- Health & Safety -->
+      <section class="card" id="health" style="margin-top:18px">
+        <div class="section-head">
+          <h2>Health & Safety</h2>
+          <div class="pill">Wellbeing</div>
+        </div>
+        <div class="grid-2">
+          <div class="item">
+            <h3>Health Awareness</h3>
+            <p>Nutrition, preventive care, reproductive health basics, and when to seek professional help.</p>
+            <div style="margin-top:10px"><button class="btn btn--primary"><a href="https://nhm.gov.in/index1.php%3Flang%3D1%26level%3D1%26sublinkid%3D150%26lid%3D226"target="_main">Learn More</a></button></div>
+          </div>
+          <div class="item">
+            <h3>Menstruation Hygiene & Myths</h3>
+            <p>Practical guidance on menstrual hygiene, dispelling common myths, safe product choices, and managing periods at work/school.</p>
+            <div style="margin-top:10px"><button class="btn btn--primary"><a href="https://www.educategirls.ngo/blog/why-the-conversation-about-periods-needs-to-come-centre-stage/?gad_source=1&gad_campaignid=23246142176&gbraid=0AAAAAC1stUQLe7-P4_hc5VG1HWpKfnR3G&gclid=Cj0KCQiAxJXJBhD_ARIsAH_JGjiGrJmd_SFg4cxeH8Ah5YF5-P6CfPK031ZmToet_ojizW9QQnaygRQaAo4pEALw_wcB" target="_main">Read</a></button></div>
+          </div>
+          <div class="item">
+            <h3>Cyber Safety for Women</h3>
+            <p>Online privacy, safe social media practices, what to do when harassed online, and reporting mechanisms.</p>
+            <div style="margin-top:10px"><button class="btn btn--primary"><a href="https://cybercrime.gov.in/Webform/Crime_OnlineSafetyTips.aspx"target="_main">Protect Yourself</a></button></div>
+          </div>
+          <div class="item">
+            <h3>Self-Defense Tips</h3>
+            <p>Practical non-violent techniques and safety planning. Join local self-defence workshops for hands-on practice.</p>
+            <div style="margin-top:10px"><button class="btn btn--ghost"><a href="https://samagra.education.gov.in/raksha.html"target="_main">Find Workshops</a></button></div>
+          </div>
+        </div>
+      </section>
+<!-- Support System -->
+      <section class="card" id="support" style="margin-top:18px">
+        <div class="section-head">
+          <h2>Support System</h2>
+          <div class="pill">We're with you</div>
+        </div>
+        <div class="grid-2">
+          <div class="item">
+            <h3>Women NGOs</h3>
+            <p>Directory of NGOs working on women safety, legal aid, shelters and vocational training. Many provide helplines and emergency support.</p>
+              <div style="margin-top:10px"><a class="btn btn--primary" href="https://wcd.delhi.gov.in/wcd/women-welfare-institutions" target="_main">View NGOs</a></div>
+          </div>
+          <div class="item">
+            <h3>Government Schemes for Women</h3>
+            <p>Information on schemes for livelihoods, insurance, skill grants, and maternity support. Always verify eligibility and apply through official portals.</p>
+            <div style="margin-top:10px"><button class="btn btn--primary"><a href="https://wcdhry.gov.in/schemes-for-women/"target="_main">Check Schemes</a></button></div>
+          </div>
+          <div class="item">
+            <h3>Mental Health Support</h3>
+            <p>Counselling resources, helplines, and self-care strategies. Confidential support is available in many regions through NGOs and hospitals.</p>
+            <div style="margin-top:10px"><button class="btn btn--primary"><a href="https://grow.ie/peer-support-mental-health/?gad_source=1&gad_campaignid=23227536714&gbraid=0AAAAADmGKBxeuneVQulWjgEBspaCDKcrT&gclid=Cj0KCQiAxJXJBhD_ARIsAH_JGjg5CsMDNyBRaemrP-GFKndkocMfohIy242heQq9XKHcKZ7hyAD-FjMaApFXEALw_wcB"target="_main">Get Help</a></button></div>
+          </div>
+          <div class="item">
+            <h3>Legal Rights & Reporting</h3>
+            <p>How to file complaints, what documents to keep, free legal aid and emergency numbers — preparedness empowers safer outcomes.</p>
+            <div style="margin-top:10px"><button class="btn btn--ghost"><a href="https://nalsa.gov.in/women-and-law/"target="_main">Legal Aid</a></button></div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Right column: Quiz + Feedback -->
+    <aside>
+      <section class="card" id="quiz">
+        <div class="section-head"><h2>Quiz: How aware are you?</h2><div class="pill">Quick Test</div></div>
+        <div class="quiz" id="quiz-wrap">
+          <!-- Questions injected by JS -->
+        </div>
+        <div style="margin-top:10px;display:flex;gap:8px">
+          <button class="btn btn--primary" id="quiz-submit">Submit</button>
+          <button class="btn btn--ghost" id="quiz-reset">Reset</button>
+        </div>
+        <div id="quiz-result" style="margin-top:12px;font-weight:700"></div>
+      </section>
+
+      <section class="card" id="feedback" style="margin-top:18px">
+        <div class="section-head"><h2>Feedback</h2><div class="pill">Tell us</div></div>
+        <form class="feedback" id="feedback-form">
+          <input type="text" id="fb-name" placeholder="Your name" />
+          <input type="email" id="fb-email" placeholder="Email" />
+          <select id="fb-topic">
+            <option value="general">General</option>
+            <option value="education">Education</option>
+            <option value="health">Health</option>
+            <option value="support">Support</option>
+            <option value="website">Website</option>
+          </select>
+          <textarea id="fb-message" rows="4" placeholder="Your feedback"></textarea>
+          <div style="display:flex;gap:8px">
+            <button class="btn btn--primary" type="button" id="fb-send">Send Feedback</button>
+            <button class="btn btn--ghost" type="button" id="fb-clear">Clear</button>
+          </div>
+          <div id="fb-saved" style="margin-top:6px;color:rgba(97, 135, 118, 0.9)"></div>
+        </form>
+      </section>
+
+      <section class="card" style="margin-top:18px">
+        <h3>Quick Helpline's</h3>
+        <p style="margin:6px 0">Police / Emergency: <strong>100</strong></p>
+        <p style="margin:6px 0">Women Helpline: <strong>1091</strong></p>
+        <p style="margin:6px 0">Mental Health Helpline: <strong>+91-XXXXXXXXXX</strong></p>
+      </section>
+    </aside>
+
+  </main>
+
+  <footer class="container">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
+      <div>© <span id="year"></span> --Women Safety & Empowerment — ❤️</div>
+      <div style="opacity:0.8">Made for awareness, education and community support.</div>
+    </div>
+  </footer>
+  <!-- Load page scripts AFTER DOM so inline DOM lookups in web.js work without needing defer -->
+  <script src="web.js"></script>
+</body>
+</html>
+    
