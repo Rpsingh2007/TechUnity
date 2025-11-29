@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SafeSphere/login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="login_style.css"/>
+</head>
+<body>
+
+  <div class="box">
+    <h2 style="margin-top:0">Login</h2>
+
+    <input type="email" id="email" placeholder="Enter Email">
+    <input type="password" id="password" placeholder="Enter Password">
+    <div class="show-password" style="margin-top:8px;display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,0.9)">
+      <input id="showPasswordToggle" type="checkbox" aria-label="Show password" onclick="togglePasswordVisibility()">
+      <label for="showPasswordToggle" style="cursor:pointer;margin:0">Show password</label>
+    </div>
+
+    <div style="display:flex;gap:8px">
+      <button id="loginBtn" onclick="login()">Login</button>
+      <button id="registerBtn" onclick="registerUser()" style="background:#34d399">Register</button>
+    </div>
+
+    <p id="msg"></p>
+    
+    <p style="font-size:12px;margin-top:8px;opacity:0.85">Don't have an account? Use <strong>Register</strong> to create one — the site will store your email securely (passwords are hashed).</p>
+  </div>
+  <script src="login_page.js"></script>
+  
+
+</body>
+</html>
